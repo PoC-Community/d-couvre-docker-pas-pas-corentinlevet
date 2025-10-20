@@ -1,5 +1,4 @@
-# Use node:12-alpine as base image
-FROM node:12-alpine
+FROM node:25-alpine
 
 WORKDIR /app
 
@@ -13,5 +12,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-# Start the application
 CMD ["npm", "start"]
