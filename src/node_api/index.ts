@@ -14,7 +14,7 @@ async function initServer() {
 async function main() {
   await initServer();
 
-  app.get('/', (req, res) => {
+  app.get('/', (req: express.Request, res: express.Response) => {
     res.status(200);
     res.send("Welcome to the workshop!")
   });
